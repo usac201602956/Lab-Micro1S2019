@@ -36,9 +36,9 @@ struct General{
 typedef const struct General TipoEstado;
 
 TipoEstado SM[3] = {
-     {LedRojo, F_1Hz, Azul, Verde},  //Rojo
-     {LedAzul, F_2Hz, Verde, Rojo},  //Azul
-     {LedVerde, F_4Hz, Rojo, Azul}  //Verde
+     {LedRojo, F_1Hz, Azul, Verde},  //Rojo.
+     {LedAzul, F_2Hz, Verde, Rojo},  //Azul.
+     {LedVerde, F_4Hz, Rojo, Azul}  //Verde.
 };
 //**********************************VARIABLES***************************************//
 int Estado;
