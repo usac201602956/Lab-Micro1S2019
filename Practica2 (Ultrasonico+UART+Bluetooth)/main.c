@@ -43,7 +43,7 @@ void Int_Delay(void){
 }
 
 void Int_DataGet(void){
-    GPIOIntClear(GPIO_PORTB_BASE, GPIO_PIN_6); //Limpiar interrupción por PB6
+    GPIOIntClear(GPIO_PORTB_BASE, GPIO_PIN_6); //Limpiar interrupción por PB6.
     if (echo == 1){
         v1 = TimerValueGet(TIMER1_BASE, TIMER_A);
         echo = 0;
@@ -51,9 +51,9 @@ void Int_DataGet(void){
         v2 = TimerValueGet(TIMER1_BASE, TIMER_A);
         echo = 1;
         tiempo = (SysCtlClockGet())/(v1 - v2);
-        Distancia = (((1/tiempo)*34320)/2)/2.54;   //Calculo de la distancia medida
+        Distancia = (((1/tiempo)*34320)/2)/2.54;   //Calculo de la distancia medida.
 
-        //Separar número de la Distancia en Unidades, Decenas, Centenas y Decimales
+        //Separar número de la Distancia en Unidades, Decenas, Centenas y Decimales.
         Centena = Distancia/100;
         Decena = (Distancia - (Centena*100))/10;
         Unidad = Distancia - (Centena*100) - (Decena*10);
