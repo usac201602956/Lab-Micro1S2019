@@ -1,10 +1,10 @@
-#include<stdint.h>
-#include<stdbool.h>
+#include <stdint.h>
+#include <stdbool.h>
 
-#include"inc/hw_memmap.h"
-#include"inc/tm4c123gh6pm.h"
-#include"inc/hw_types.h"
-#include"driverlib/sysctl.h"
+#include "inc/hw_memmap.h"
+#include "inc/tm4c123gh6pm.h"
+#include "inc/hw_types.h"
+#include "driverlib/sysctl.h"
 #include "driverlib/gpio.h"      //Periféricos de entrada y salida
 #include "inc/hw_gpio.h"         //Para desbloquear pines
 #include "driverlib/interrupt.h" //Para interrupciones
@@ -48,6 +48,5 @@ int main(void) {
 	GPIO();
 	config_Interrupt();
 
-	while(1){
-	    }
+	while(1);
 }
