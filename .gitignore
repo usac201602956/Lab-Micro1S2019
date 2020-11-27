@@ -3,3 +3,6 @@
 /dvt/
 /RemoteSystemsTempFiles/
 */Debug/
+*/.launches/
+*/.settings/
+*/targetConfigs/
